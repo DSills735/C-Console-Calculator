@@ -10,7 +10,7 @@
 
         while (!endApp)
         {
-            
+            Calculator calculator = new Calculator();
             string numInput1 = "";
             string numInput2 = "";
             double result = 0;
@@ -48,7 +48,7 @@
             string op = Console.ReadLine();
 
             try
-            {
+            { 
                 result = Calculator.DoOperation(cleanNum1, cleanNum2, op);
                 if (double.IsNaN(result))
                 {
